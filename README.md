@@ -1,2 +1,9 @@
-# Pseint Desde cer0
-Acá iré subiendo mis primero scripts sobre pseint desde cero
+###  Pseint desde 0
+
+- Algoritmos Programacion secuencial.
+- Algoritmos de Estructuras de control.
+- Algoritmos de Estructuras de control selectivas.
+- Algoritmos de Estructuras repetitivas.
+
+
+###End
