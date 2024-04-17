@@ -13,8 +13,11 @@
 - Algoritmos de Estructuras de control selectivas.
 - Algoritmos de Estructuras repetitivas.
 
-------------
+-------------
 
+<p>
+  En este repositorio iré subiendo todos los algoritmos creados por mí y como voy avanzando con las guias de trabajo.
+</p>
 
 
 ### End
