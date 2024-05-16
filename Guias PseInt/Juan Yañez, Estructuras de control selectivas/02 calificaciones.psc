@@ -1,6 +1,6 @@
 Proceso calificaciones
 	
-	Definir notaNum, nutaLb Como Entero;
+	Definir notaNum Como Entero;
 	
 	Escribir "Ingresa la nota que deseas transformar al sistema americano.";
 	leer notanum;

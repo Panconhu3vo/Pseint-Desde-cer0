@@ -1,0 +1,64 @@
+Proceso listaDeObjetos
+	
+	Definir i,j Como Entero;
+	Definir producto,x Como Caracter;
+	Dimension producto[8,3];
+	definir a como logico; 
+	j=0;
+	a = Verdadero;
+	producto[0,0] = "nombre";
+	producto[0,1] = "tipo";
+	producto[0,2] = "precio";
+	
+	producto[1,0] = "tallarines";
+	producto[1,1] = "pasta";
+	producto[1,2] = "$1200";
+	
+	producto[2,0] = "canutones";
+	producto[2,1] = "pasta";
+	producto[2,2] = "$1100";
+	
+	producto[3,0] = "arroz";
+	producto[3,1] = "cereales";
+	producto[3,2] = "$950";
+	
+	producto[4,0] = "porotos";
+	producto[4,1] = "legumbres";
+	producto[4,2] = "$1400";
+	
+	producto[5,0] = "lentejas";
+	producto[5,1] = "legumbres";
+	producto[5,2] = "$1300";
+	
+	producto[6,0] = "harina";
+	producto[6,1] = "cereales";
+	producto[6,2] = "$1000";
+	
+	producto[7,0] = "leche";
+	producto[7,1] = "lacteos";
+	producto[7,2] = "$1100";
+	
+	Escribir "¿Que datos de productos alimenticios desea saber? (para ingresar un dato debe estar en minuscula)";
+	leer x;
+	
+	para i = 0 Hasta 7 Hacer
+		si producto[i,0] = x Entonces
+			Escribir "El producto tiene estas caracteristicas: ";
+			Escribir " ",producto[0,0],"  |  ",producto[0,1],"  |  ",producto[0,2];
+			Escribir producto[i,0]," | ",producto[i,1]," | ",producto[i,2];
+		sino
+			para j = 0 Hasta 2 Hacer
+				si producto[i,j] = x Entonces
+					si a = Verdadero Entonces
+						Escribir "Los productos con iguales coincidencias: ";
+						Escribir " ",producto[0,0],"  |  ",producto[0,1],"  |  ",producto[0,2];
+					FinSi
+					Escribir producto[i,0]," | ",producto[i,1]," | ",producto[i,2];
+					a = falso;
+				FinSi
+			FinPara
+		FinSi
+	FinPara
+	
+	
+FinProceso

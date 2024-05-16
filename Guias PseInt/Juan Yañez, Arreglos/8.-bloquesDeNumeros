@@ -1,0 +1,46 @@
+Proceso bloquesDeNumeros
+	
+	Definir i,j,k,g, num, mayor,mayor1 Como Entero;
+	Dimension num[10,2];
+	mayor=0;
+	mayor1=0;
+	
+	Escribir "Ingresa los primeros 10 numeros: ";
+	para i = 0 Hasta 9 Hacer
+		Escribir "Numero ",i+1,":";
+		leer num[i,0];
+	FinPara
+	
+	Escribir "Ingresa los segundos 10 numeros: ";
+	para g = 0 Hasta 9 Hacer
+		Escribir "Numero ",g+1,":";
+		leer num[g,1];
+	FinPara
+	
+	para j = 0 Hasta 9 Hacer
+		para k = 0 Hasta 9 Hacer
+			si num[j,0] >= num[k,0] Entonces
+				
+				si mayor <= num[k,0] Entonces
+					mayor = num[k,0];
+				FinSi
+				
+			FinSi
+		FinPara
+	FinPara
+	
+	para j = 0 Hasta 9 Hacer
+		para k = 0 Hasta 9 Hacer
+			si num[j,1] >= num[k,1] Entonces
+				
+				si mayor1 <= num[k,1] Entonces
+					mayor1 = num[k,1];
+				FinSi
+				
+			FinSi
+		FinPara
+	FinPara
+	
+	Escribir "El numero mayor del bloque 1 es: ",mayor," y el numero mayor del bloque dos es: ",mayor1;
+	
+FinProceso
